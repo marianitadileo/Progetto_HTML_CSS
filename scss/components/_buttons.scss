@@ -1,0 +1,56 @@
+@use "../abstracts" as *;
+
+.button {
+  padding: 0.85rem 1.6rem;
+  border: 1px solid transparent;
+  font-family: $font-testo;
+  font-size: 0.98rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background $transizione, color $transizione, border-color $transizione, transform $transizione, box-shadow $transizione;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.button-solid {
+  background: var(--principale);
+  color: var(--testo-su-principale);
+  box-shadow: 0 2px 8px var(--principale-32);
+
+  &:hover {
+    background: var(--principale-hover);
+    color: var(--testo-su-principale);
+  }
+}
+
+.button-outline {
+  background: var(--superficie);
+  border-color: var(--bordo);
+  color: var(--testo);
+
+  &:hover {
+    border-color: var(--principale);
+    color: var(--principale);
+  }
+}
+
+.button-link {
+  padding: 0;
+  background: none;
+  color: var(--principale);
+
+  .arrow {
+    transition: transform $transizione;
+  }
+
+  &:hover .arrow {
+    transform: translateX(4px);
+  }
+}
+
+.button-small {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.88rem;
+}

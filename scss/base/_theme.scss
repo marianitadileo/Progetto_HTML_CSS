@@ -1,0 +1,101 @@
+@use "../abstracts" as *;
+
+@mixin tema-chiaro {
+  color-scheme: light;
+
+  --sfondo: #{$chiaro-sfondo};
+  --sfondo-alt: #{$chiaro-sfondo-alt};
+  --sfondo-header: #{rgba($chiaro-sfondo, 0.82)};
+  --superficie: #{$chiaro-bianco};
+  --superficie-tenue: #{$chiaro-sfondo-alt};
+  --bordo: #{$chiaro-bordo};
+
+  --testo: #{$chiaro-blu};
+  --testo-secondario: #{$chiaro-indaco};
+  --testo-tenue: #{$chiaro-indaco-tenue};
+
+  --principale: #{$chiaro-indaco};
+  --principale-hover: #{$chiaro-blu};
+  --testo-su-principale: #{$chiaro-bianco};
+  --principale-10: #{rgba($chiaro-indaco, 0.1)};
+  --principale-12: #{rgba($chiaro-indaco, 0.12)};
+  --principale-15: #{rgba($chiaro-indaco, 0.15)};
+  --principale-18: #{rgba($chiaro-indaco, 0.18)};
+  --principale-32: #{rgba($chiaro-indaco, 0.32)};
+  --principale-35: #{rgba($chiaro-indaco, 0.35)};
+
+  --bordo-hover: #91a0cb;
+  --superficie-card: #{$chiaro-bianco};
+  --bordo-card: #{$chiaro-indaco};
+  --spessore-bordo-card: 3px;
+  --bordo-card-hover: #{$chiaro-blu};
+  --ombra-card: 0 1px 2px rgba(32, 59, 112, 0.08), 0 6px 18px rgba(32, 59, 112, 0.1);
+  --superficie-input: #{$chiaro-bianco};
+  --bordo-input: #{$chiaro-indaco-tenue};
+  --bordo-valido: #8191c1;
+
+  --accento: #{$chiaro-orchidea};
+
+  --ombra-piccola: #{$ombra-piccola};
+  --ombra-media: #{$ombra-media};
+
+  --freccia-select: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23384f95'%3E%3Cpath d='M8 11.2 2.8 6l1.1-1.1L8 9l4.1-4.1L13.2 6z'/%3E%3C/svg%3E");
+}
+
+@mixin tema-scuro {
+  color-scheme: dark;
+
+  --sfondo: #{$scuro-sfondo};
+  --sfondo-alt: #{$scuro-sfondo-alt};
+  --sfondo-header: #{rgba($scuro-sfondo, 0.82)};
+  --superficie: #{$scuro-sfondo-alt};
+  --superficie-tenue: #{$scuro-sfondo};
+  --bordo: #{$scuro-bordo};
+
+  --testo: #{$scuro-testo};
+  --testo-secondario: #{$scuro-lavanda};
+  --testo-tenue: #{$scuro-pervinca};
+
+  --principale: #{$scuro-lavanda};
+  --principale-hover: #{$scuro-lavanda-chiara};
+  --testo-su-principale: #{$scuro-sfondo};
+  --principale-10: #{rgba($scuro-lavanda, 0.1)};
+  --principale-12: #{rgba($scuro-lavanda, 0.12)};
+  --principale-15: #{rgba($scuro-lavanda, 0.15)};
+  --principale-18: #{rgba($scuro-lavanda, 0.18)};
+  --principale-32: #{rgba($scuro-lavanda, 0.32)};
+  --principale-35: #{rgba($scuro-lavanda, 0.35)};
+
+  --bordo-hover: #6d68a1;
+  --superficie-card: #{$scuro-bordo};
+  --bordo-card: #{$scuro-lavanda};
+  --spessore-bordo-card: 3px;
+  --bordo-card-hover: #{$scuro-lavanda-chiara};
+  --ombra-card: 0 2px 4px rgba(0, 0, 0, 0.35), 0 10px 28px rgba(0, 0, 0, 0.45);
+  --superficie-input: #{$scuro-sfondo};
+  --bordo-input: #{$scuro-pervinca};
+  --bordo-valido: #7c74af;
+
+  --accento: #{$scuro-prugna};
+
+  --ombra-piccola: 0 1px 2px rgba(0, 0, 0, 0.45);
+  --ombra-media: 0 8px 24px rgba(0, 0, 0, 0.5);
+
+  --freccia-select: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2393a8eb'%3E%3Cpath d='M8 11.2 2.8 6l1.1-1.1L8 9l4.1-4.1L13.2 6z'/%3E%3C/svg%3E");
+}
+
+:root {
+  @include tema-chiaro;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(:has(.theme-check:checked)) {
+    @include tema-scuro;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root:has(.theme-check:checked) {
+    @include tema-scuro;
+  }
+}

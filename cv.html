@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae — Marianita Di Leo</title>
+  <meta name="description" content="Curriculum vitae di Marianita Di Leo: formazione, esperienze, competenze tecniche e lingue. Versione HTML, stampabile in PDF.">
+  <meta name="author" content="Marianita Di Leo">
+  <meta name="theme-color" content="#203b70">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Marianita Di Leo - Portfolio">
+  <meta property="og:title" content="Curriculum Vitae - Marianita Di Leo">
+  <meta property="og:description" content="Formazione, esperienze, competenze tecniche e lingue.">
+  <meta property="og:url" content="https://marianitadileo.github.io/Progetto_HTML_CSS/cv.html">
+  <meta property="og:image" content="https://marianitadileo.github.io/Progetto_HTML_CSS/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Copertina del portfolio di Marianita Di Leo">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Curriculum Vitae - Marianita Di Leo">
+  <meta name="twitter:description" content="Formazione, esperienze, competenze tecniche e lingue.">
+  <meta name="twitter:image" content="https://marianitadileo.github.io/Progetto_HTML_CSS/assets/img/og-image.png">
+
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css?v=11" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link visually-hidden-focusable" href="#contenuto">Salta al contenuto principale</a>
+
+  <header class="site-header sticky-top">
+    <nav class="main-nav d-flex flex-wrap align-items-center justify-content-between column-gap-3" aria-label="Menu principale">
+      <a class="logo d-inline-flex align-items-center fw-bold text-decoration-none" href="index.html">
+        <img src="assets/img/favicon.svg" alt="" width="34" height="34">
+        <span>
+          Marianita Di Leo
+          <span class="logo-subtitle d-block fw-normal text-uppercase">Portfolio</span>
+        </span>
+      </a>
+
+      <input class="theme-check visually-hidden" type="checkbox" id="tema" aria-label="Cambia tema chiaro o scuro">
+      <label class="theme-switch d-inline-flex align-items-center order-lg-3 ms-lg-2" for="tema">
+        <span class="theme-track position-relative d-flex align-items-center justify-content-between rounded-pill">
+          <svg aria-hidden="true" focusable="false" class="theme-icon position-relative z-1 sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4.2"/>
+            <path d="M12 2.2v2.4M12 19.4v2.4M2.2 12h2.4M19.4 12h2.4M5 5l1.7 1.7M17.3 17.3 19 19M19 5l-1.7 1.7M6.7 17.3 5 19"/>
+          </svg>
+          <svg aria-hidden="true" focusable="false" class="theme-icon position-relative z-1 moon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21.2 13.4A9.2 9.2 0 0 1 10.6 2.8a9.2 9.2 0 1 0 10.6 10.6z"/>
+          </svg>
+          <span class="theme-knob position-absolute rounded-circle"></span>
+        </span>
+      </label>
+
+      <input class="menu-check visually-hidden" type="checkbox" id="menu-mobile" aria-label="Apri o chiudi il menu">
+      <label class="hamburger d-inline-flex d-lg-none flex-column justify-content-center" for="menu-mobile">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="menu list-unstyled m-0 d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-1 gap-lg-2">
+        <li><a class="menu-link position-relative d-block fw-medium text-decoration-none" href="index.html">Home</a></li>
+        <li><a class="menu-link position-relative d-block fw-medium text-decoration-none" href="index.html#chi-sono">Chi sono</a></li>
+        <li><a class="menu-link position-relative d-block fw-medium text-decoration-none" href="progetti.html">Progetti</a></li>
+        <li><a class="menu-link position-relative d-block fw-medium text-decoration-none is-active" href="cv.html" aria-current="page">CV</a></li>
+        <li><a class="menu-link position-relative d-block fw-medium text-decoration-none" href="contatti.html">Contatti</a></li>
+        <li><a class="button d-inline-flex align-items-center justify-content-center gap-2 rounded-pill fw-semibold text-decoration-none button-solid button-small menu-button" href="contatti.html">Lavoriamo insieme</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenuto">
+    <section class="page-header position-relative no-print">
+      <div class="site-container">
+        <div class="grid griglia">
+          <div class="g-col-lg-8">
+            <nav aria-label="Percorso di navigazione">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="text-decoration-none" href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Curriculum</li>
+              </ol>
+            </nav>
+            <p class="eyebrow d-inline-flex align-items-center gap-2 text-uppercase fw-medium">Curriculum Vitae</p>
+            <h1>Il mio percorso, in una pagina</h1>
+            <p class="lead">
+              Questa pagina è riservata al mio CV.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="site-container cv pb-5">
+      <div class="grid griglia align-items-start">
+        <aside class="cv-sidebar d-flex flex-column g-col-lg-4">
+          <div class="cv-box p-4 cv-identity text-center">
+            <img src="assets/img/marianita-ritaglio.jpg" alt="Fotografia di Marianita Di Leo" width="180" height="240" class="mx-auto mb-3">
+            <h2 class="cv-name mb-2">Marianita Di Leo</h2>
+            <p class="m-0 fw-medium">UX/UI designer</p>
+          </div>
+
+          <div class="cv-box p-4">
+            <h3 class="mb-3 fw-medium text-uppercase">Contatti</h3>
+            <ul class="cv-list d-grid list-unstyled m-0">
+              <li class="d-flex align-items-center">
+                <span class="icon flex-shrink-0 d-grid" aria-hidden="true">✉</span>
+                <a href="contatti.html" class="text-decoration-none text-break">Scrivimi dal modulo di contatto</a>
+              </li>
+              <li class="d-flex align-items-center">
+                <span class="icon flex-shrink-0 d-grid" aria-hidden="true">📍</span>
+                <span>Puglia, Italia</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cv-box p-4">
+            <h3 class="mb-3 fw-medium text-uppercase">Competenze tecniche</h3>
+
+            <div class="skill">
+              <div class="skill-text d-flex justify-content-between align-items-baseline mb-2"><strong class="fw-medium">Figma</strong><span>intermedio</span></div>
+              <div class="bar overflow-hidden rounded-pill" aria-hidden="true"><div class="bar-fill h-100 rounded-pill" style="width: 75%"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-text d-flex justify-content-between align-items-baseline mb-2"><strong class="fw-medium">Wireframe e prototipi</strong><span>intermedio</span></div>
+              <div class="bar overflow-hidden rounded-pill" aria-hidden="true"><div class="bar-fill h-100 rounded-pill" style="width: 70%"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-text d-flex justify-content-between align-items-baseline mb-2"><strong class="fw-medium">User interface design</strong><span>in crescita</span></div>
+              <div class="bar overflow-hidden rounded-pill" aria-hidden="true"><div class="bar-fill h-100 rounded-pill" style="width: 60%"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-text d-flex justify-content-between align-items-baseline mb-2"><strong class="fw-medium">HTML e CSS</strong><span>intermedio</span></div>
+              <div class="bar overflow-hidden rounded-pill" aria-hidden="true"><div class="bar-fill h-100 rounded-pill" style="width: 70%"></div></div>
+            </div>
+          </div>
+
+          <div class="cv-box p-4">
+            <h3 class="mb-3 fw-medium text-uppercase">Strumenti</h3>
+            <ul class="tag-list d-flex flex-wrap gap-2 list-unstyled m-0">
+              <li class="tag d-inline-flex align-items-center gap-2 rounded-pill fw-medium text-nowrap">VS Code</li>
+              <li class="tag d-inline-flex align-items-center gap-2 rounded-pill fw-medium text-nowrap">Figma</li>
+              <li class="tag d-inline-flex align-items-center gap-2 rounded-pill fw-medium text-nowrap">Git</li>
+              <li class="tag d-inline-flex align-items-center gap-2 rounded-pill fw-medium text-nowrap">Chrome DevTools</li>
+            </ul>
+          </div>
+
+          <div class="cv-box p-4">
+            <h3 class="mb-3 fw-medium text-uppercase">Lingue</h3>
+            <ul class="cv-list d-grid list-unstyled m-0">
+              <li class="d-flex align-items-center"><span class="icon flex-shrink-0 d-grid" aria-hidden="true">IT</span><span>Italiano — madrelingua</span></li>
+              <li class="d-flex align-items-center"><span class="icon flex-shrink-0 d-grid" aria-hidden="true">EN</span><span>Inglese — B1</span></li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="cv-main d-flex flex-column gap-5 g-col-lg-8">
+          <section>
+            <h2 class="cv-title d-flex align-items-center mb-4"><span class="number">01</span> Profilo</h2>
+            <p>
+              UX/UI designer in formazione, con una base tecnica solida alle spalle:
+              700 ore di sviluppo web full stack in Boolean Careers e oggi il percorso
+              di UX/UI design di start2impact.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="cv-title d-flex align-items-center mb-4"><span class="number">02</span> Formazione</h2>
+
+            <ol class="timeline position-relative m-0 list-unstyled">
+              <li class="timeline-item position-relative">
+                <p class="timeline-date d-inline-block mb-2">2026 — in corso</p>
+                <h3 class="timeline-role mb-1">Master in UX/UI Design</h3>
+                <span class="timeline-org d-block">start2impact University · online</span>
+                <p class="timeline-description">
+                  Percorso pratico costruito su progetti reali, corretti uno a uno da
+                  professionisti del settore.
+                </p>
+                <ul class="bullet-list d-grid gap-2 list-unstyled ps-4">
+                  <li>Discovery e ricerca: analizzare il problema e comprendere le esigenze degli utenti per individuare soluzioni efficaci prima di iniziare la progettazione.</li>
+                  <li>Wireframe, prototipi navigabili e user interface design in Figma.</li>
+                  <li>User testing e copywriting applicati alle interfacce.</li>
+                </ul>
+                <ul class="tag-list d-flex flex-wrap gap-2 list-unstyled m-0">
+                  <li class="tag d-inline-flex align-items-center gap-2 rounded-pill fw-medium text-nowrap">Figma</li>
+                  <li class="tag d-inline-flex align-items-center gap-2 rounded-pill fw-medium text-nowrap">UX research</li>
+                  <li class="tag d-inline-flex align-items-center gap-2 rounded-pill fw-medium text-nowrap">Prototipazione</li>
+                </ul>
+              </li>
+
+              <li class="timeline-item position-relative">
+                <p class="timeline-date d-inline-block mb-2">2023 · 7 mesi</p>
+                <h3 class="timeline-role mb-1">Full Stack Web Developer — trainee</h3>
+                <span class="timeline-org d-block">Boolean Careers · 700 ore, a tempo pieno</span>
+                <p class="timeline-description">
+                  Corso intensivo dove ho imparato ad utilizzare: HTML, CSS, Javascript, Scss, Bootstrap, Vue, MySQL, Git, Node.js, PhpMyAdmin, PHP e Laravel.
+                </p>
+                <ul class="bullet-list d-grid gap-2 list-unstyled ps-4">
+                  <li>Front-end: HTML, CSS, Sass, JavaScript e le sue librerie principali.</li>
+                  <li>Back-end: PHP, Laravel e basi di dati MySQL, con un'introduzione a Vue.js.</li>
+                  <li>Lavoro quotidiano con Git e con le scadenze di un progetto vero.</li>
+                </ul>
+                <ul class="tag-list d-flex flex-wrap gap-2 list-unstyled m-0">
+                  <li class="tag d-inline-flex align-items-center gap-2 rounded-pill fw-medium text-nowrap">HTML & CSS</li>
+                  <li class="tag d-inline-flex align-items-center gap-2 rounded-pill fw-medium text-nowrap">Sass</li>
+                  <li class="tag d-inline-flex align-items-center gap-2 rounded-pill fw-medium text-nowrap">JavaScript</li>
+                  <li class="tag d-inline-flex align-items-center gap-2 rounded-pill fw-medium text-nowrap">PHP</li>
+                </ul>
+              </li>
+
+               <li class="timeline-item position-relative">
+                <p class="timeline-date d-inline-block mb-2">2021</p>
+                <h3 class="timeline-role mb-1">Diploma in Amministrazione, Finanza e Marketing </h3>
+             
+              </li>
+            </ol>
+          </section>
+
+        
+
+  
+
+          <section>
+            <h2 class="cv-title d-flex align-items-center mb-4"><span class="number">03</span> Competenze trasversali</h2>
+            <ul class="bullet-list d-grid gap-2 list-unstyled ps-4">
+              <li>Ascolto: raccolgo i bisogni di chi userà il prodotto prima di proporre soluzioni.</li>
+              <li>Lavoro in squadra, anche a distanza e con persone di ruoli diversi.</li>
+              <li>Gestione del tempo: organizzo il lavoro per scadenze e le rispetto.</li>
+            </ul>
+
+            <p class="mt-4 privacy-note">
+              Autorizzo il trattamento dei miei dati personali ai sensi del
+              Regolamento UE 2016/679 (GDPR) e del D.Lgs. 196/2003.
+            </p>
+          </section>
+
+          <div class="no-print cv-buttons d-flex flex-wrap gap-3">
+            <a class="button d-inline-flex align-items-center justify-content-center gap-2 rounded-pill fw-semibold text-decoration-none button-solid" href="contatti.html">Contattami</a>
+            <a class="button d-inline-flex align-items-center justify-content-center gap-2 rounded-pill fw-semibold text-decoration-none button-outline" href="progetti.html">Guarda i progetti</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer position-relative">
+    <div class="site-container">
+      <div class="grid griglia">
+        <div class="site-footer-column d-flex flex-column g-col-md-4 g-col-lg-6">
+          <h2 class="mb-3 fw-medium text-uppercase">Marianita Di Leo</h2>
+          <p>
+            Creatività, design e tecnologia per dare vita a esperienze digitali che fanno la differenza.
+          </p>
+          <ul class="social-list list-unstyled d-flex flex-wrap mt-3 mb-0">
+            <li>
+              <a class="footer-contact d-inline-flex align-items-center justify-content-center fw-semibold text-decoration-none" href="contatti.html">Contattami</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="site-footer-column d-flex flex-column g-col-2 g-col-md-2 g-col-lg-3">
+          <h2 class="mb-3 fw-medium text-uppercase">Pagine</h2>
+          <ul class="list-unstyled d-flex flex-column gap-2 m-0">
+            <li><a class="text-decoration-none" href="index.html">Home</a></li>
+            <li><a class="text-decoration-none" href="index.html#chi-sono">Chi sono</a></li>
+            <li><a class="text-decoration-none" href="progetti.html">Progetti</a></li>
+            <li><a class="text-decoration-none" href="cv.html">Curriculum</a></li>
+            <li><a class="text-decoration-none" href="contatti.html">Contatti</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer-column d-flex flex-column g-col-2 g-col-md-2 g-col-lg-3">
+          <h2 class="mb-3 fw-medium text-uppercase">Contatti</h2>
+          <ul class="list-unstyled d-flex flex-column gap-2 m-0">
+            <li><a class="text-decoration-none" href="contatti.html">Modulo di contatto</a></li>
+            <li><a class="text-decoration-none" href="cv.html">Scarica il CV</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer-bottom d-flex flex-wrap align-items-center justify-content-between mt-5 pt-4">
+      <p class="m-0">© 2026 Marianita Di Leo — Tutti i diritti riservati.</p>
+      <p class="m-0">Realizzato con HTML, Sass e Bootstrap.</p>
+    </div>
+  </footer>
+</body>
+</html>

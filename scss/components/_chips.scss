@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+.tag {
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--bordo);
+  background: var(--superficie);
+  font-family: $font-testo;
+  font-size: 0.78rem;
+  color: var(--testo-secondario);
+}
+
+.tag-colored {
+  border-color: var(--principale-35);
+  background: var(--principale-10);
+  color: var(--principale);
+}

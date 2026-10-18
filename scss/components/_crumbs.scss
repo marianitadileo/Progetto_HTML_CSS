@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.breadcrumb {
+  --bs-breadcrumb-margin-bottom: 1rem;
+  --bs-breadcrumb-font-size: 0.85rem;
+  --bs-breadcrumb-divider-color: var(--bordo);
+  --bs-breadcrumb-item-active-color: var(--testo-tenue);
+
+  a {
+    color: var(--testo-tenue);
+
+    &:hover {
+      color: var(--principale);
+    }
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/" / "";
+}

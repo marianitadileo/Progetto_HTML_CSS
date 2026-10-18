@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.section-colored::before {
+  @include onda;
+  top: -57px;
+}
+
+.section-colored::after,
+.page-header::after {
+  @include onda;
+  bottom: -57px;
+  transform: scaleY(-1);
+}

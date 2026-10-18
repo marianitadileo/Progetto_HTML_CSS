@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-personale",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sito personale in HTML, Sass e Bootstrap - progetto del corso HTML/CSS",
+  "scripts": {
+    "sass": "sass scss/main.scss css/style.css --style=expanded --no-source-map --load-path=node_modules --quiet-deps --silence-deprecation=import",
+    "watch": "sass --watch scss/main.scss css/style.css --style=expanded --load-path=node_modules --quiet-deps --silence-deprecation=import",
+    "build": "sass scss/main.scss css/style.css --style=compressed --no-source-map --load-path=node_modules --quiet-deps --silence-deprecation=import"
+  },
+  "devDependencies": {
+    "bootstrap": "5.3.3",
+    "sass": "^1.104.0"
+  }
+}

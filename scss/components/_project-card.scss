@@ -1,0 +1,54 @@
+@use "../abstracts" as *;
+
+.project-card {
+  background: var(--superficie-card);
+  border: var(--spessore-bordo-card) solid var(--bordo-card);
+  border-radius: $raggio-grande;
+  box-shadow: var(--ombra-card);
+  transition: border-color $transizione, box-shadow $transizione, transform $transizione;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 1;
+    height: 4px;
+    background: linear-gradient(90deg, var(--principale), var(--accento));
+    opacity: 0.85;
+    transition: opacity $transizione;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--bordo-card-hover);
+    box-shadow: 0 0 0 4px var(--principale-15), var(--ombra-media);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.project-card-image {
+  aspect-ratio: 16 / 10;
+  background: var(--superficie-tenue);
+  border-bottom: 2px solid var(--bordo-card);
+}
+
+.project-card-body {
+  gap: 0.75rem;
+}
+
+.project-card-title {
+  font-size: 1.2rem;
+}
+
+.project-card-text {
+  font-size: 0.95rem;
+  color: var(--testo-secondario);
+}
+
+.project-card-footer {
+  padding-top: 0.75rem;
+  border-top: 2px solid var(--bordo-card);
+}

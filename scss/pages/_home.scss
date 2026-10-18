@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+.qualities-list {
+  gap: 0.75rem;
+
+  li {
+    gap: 0.75rem;
+    color: var(--testo-secondario);
+  }
+}
+
+.checkmark {
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  margin-top: 3px;
+  background: var(--principale-15);
+  color: var(--principale);
+  font-size: 0.7rem;
+}
+
+.contact-box {
+  border: 1px solid var(--bordo);
+  border-radius: $raggio-grande;
+  background: var(--superficie-tenue);
+  box-shadow: var(--ombra-piccola);
+
+  p {
+    max-width: 46ch;
+    margin-bottom: 2rem;
+  }
+}

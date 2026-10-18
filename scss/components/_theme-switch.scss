@@ -1,0 +1,87 @@
+@use "../abstracts" as *;
+
+.theme-check:focus-visible + .theme-switch .theme-track {
+  outline: 3px solid var(--principale);
+  outline-offset: 3px;
+}
+
+.theme-switch {
+  cursor: pointer;
+}
+
+.theme-track {
+  width: 62px;
+  height: 32px;
+  padding: 0 7px;
+  border: 1px solid var(--bordo-input);
+  background: var(--superficie-tenue);
+  transition: border-color $transizione, background $transizione;
+}
+
+.theme-switch:hover .theme-track {
+  border-color: var(--principale);
+}
+
+.theme-knob {
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background: var(--superficie);
+  border: 1px solid var(--bordo);
+  box-shadow: var(--ombra-piccola);
+  transition: transform $transizione, background $transizione;
+}
+
+.theme-icon {
+  width: 15px;
+  height: 15px;
+  color: var(--testo-tenue);
+  transition: color $transizione;
+}
+
+@mixin interruttore-chiaro {
+  .theme-knob {
+    transform: none;
+  }
+
+  .sun {
+    color: var(--principale);
+  }
+
+  .moon {
+    color: var(--testo-tenue);
+  }
+}
+
+@mixin interruttore-scuro {
+  .theme-knob {
+    transform: translateX(30px);
+  }
+
+  .sun {
+    color: var(--testo-tenue);
+  }
+
+  .moon {
+    color: var(--principale);
+  }
+}
+
+.theme-switch {
+  @include interruttore-chiaro;
+}
+
+.theme-check:checked ~ .theme-switch {
+  @include interruttore-scuro;
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-switch {
+    @include interruttore-scuro;
+  }
+
+  .theme-check:checked ~ .theme-switch {
+    @include interruttore-chiaro;
+  }
+}

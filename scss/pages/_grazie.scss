@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+
+.thanks {
+  min-height: 68vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  p {
+    max-width: 48ch;
+  }
+}
+
+.thanks-icon {
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  background: var(--principale);
+  color: var(--testo-su-principale);
+  font-size: 2.6rem;
+}
+
+.thanks-buttons {
+  margin-top: 2rem;
+}

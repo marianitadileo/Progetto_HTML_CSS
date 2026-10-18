@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(180deg, var(--sfondo-alt) 0%, var(--sfondo) 78%);
+
+  @media (min-width: $schermo-grande) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.hero-name {
+  color: var(--principale);
+}
+
+.hero-text {
+  max-width: 52ch;
+  margin-bottom: 2rem;
+}
+
+.hero-photo-box {
+  justify-self: center;
+  width: 100%;
+  max-width: 340px;
+
+  @media (min-width: $schermo-medio) {
+    max-width: none;
+  }
+}
+
+.hero-photo {
+  aspect-ratio: 3 / 4;
+  border-radius: $raggio-grande;
+  border: 6px solid var(--superficie);
+  background: var(--superficie-tenue);
+  box-shadow: var(--ombra-media);
+}
+
+.waving-hand {
+  display: inline-block;
+  font-size: 0.9em;
+}

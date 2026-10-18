@@ -1,0 +1,105 @@
+@use "../abstracts" as *;
+
+.form {
+  row-gap: 24px;
+}
+
+.field-label {
+  font-size: 0.9rem;
+  color: var(--testo);
+}
+
+.required {
+  color: var(--principale);
+  margin-left: 2px;
+}
+
+.asterisk {
+  color: var(--principale);
+}
+
+.field-help {
+  font-size: 0.82rem;
+  color: var(--testo-tenue);
+}
+
+.input {
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--bordo-input);
+  border-radius: $raggio-medio;
+  background: var(--superficie-input);
+  color: var(--testo);
+  font-family: $font-testo;
+  font-size: 1rem;
+  transition: border-color $transizione, box-shadow $transizione, background $transizione;
+
+  &::placeholder {
+    color: var(--testo-tenue);
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: var(--principale);
+  }
+
+  &:focus {
+    outline: 3px solid var(--principale);
+    outline-offset: 2px;
+    border-color: var(--principale);
+    box-shadow: 0 0 0 4px var(--principale-18);
+  }
+
+  &:not(select):not(:placeholder-shown):invalid,
+  &:user-invalid {
+    border-color: var(--accento);
+  }
+
+  &:not(:placeholder-shown):valid {
+    border-color: var(--bordo-valido);
+  }
+}
+
+textarea.input {
+  min-height: 160px;
+  resize: vertical;
+}
+
+select.input {
+  appearance: none;
+  padding-right: 2.6rem;
+  background-image: var(--freccia-select);
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+.field-error {
+  display: none;
+  font-size: 0.82rem;
+  color: var(--testo);
+
+  &::before {
+    content: "⚠ " / "Errore: ";
+    color: var(--principale);
+  }
+}
+
+.input:not(:placeholder-shown):invalid ~ .field-error {
+  display: block;
+}
+
+.checkbox {
+  gap: 0.75rem;
+  font-size: 0.92rem;
+  color: var(--testo-secondario);
+  cursor: pointer;
+
+  input {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    accent-color: var(--principale);
+    cursor: pointer;
+  }
+}
